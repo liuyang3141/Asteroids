@@ -72,7 +72,7 @@ def main():
             for shot in shots:
                 if asteroid.check_collision(asteroid, shot):
                     shot.kill()
-                    asteroid.kill()
+                    asteroid.split()
 
         # Drawing player objects
         for drawables in drawable:

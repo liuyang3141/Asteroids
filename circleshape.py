@@ -21,6 +21,7 @@ class CircleShape(pygame.sprite.Sprite):
         pass
 
     def check_collision(self, circle1, circle2):
+        # Calculate the distance between the two circle objects
         distance = circle1.radius + circle2.radius
 
         return circle1.position.distance_to(circle2.position) <= distance
